@@ -1,3 +1,5 @@
+// Endpoint para salir del chat
+
 import { NextResponse } from "next/server";
 
 import { currentProfile } from "@/lib/current-profile";
@@ -18,6 +20,7 @@ export async function PATCH(
       return new NextResponse("Server ID missing", { status: 400 });
     }
 
+    // funcion para salir del chat
     const server = await db.server.update({
       where: {
         id: params.serverId,

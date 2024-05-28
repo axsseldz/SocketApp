@@ -45,10 +45,10 @@ export const LeaveServerModal = () => {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Leave Server
+            Salir del chat
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            Are you sure you want to leave <span className="font-semibold text-indigo-500">{server?.name}</span>?
+            Estas seguro de salir del chat de <span className="font-semibold text-indigo-500">{server?.name}</span>?
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-gray-100 px-6 py-4">
@@ -58,14 +58,14 @@ export const LeaveServerModal = () => {
               onClick={onClose}
               variant="ghost"
             >
-              Cancel
+              Cancelar
             </Button>
             <Button
               disabled={isLoading}
               variant="primary"
               onClick={onClick}
             >
-              Confirm
+              Confirmar
             </Button>
           </div>
         </DialogFooter>

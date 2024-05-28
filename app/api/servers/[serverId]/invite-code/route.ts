@@ -1,3 +1,5 @@
+// Endpoint para la creacion del id del chat
+
 import { v4 as uuidv4 } from "uuid";
 import { NextResponse } from "next/server";
 

@@ -1,3 +1,5 @@
+// Funcion para obtener el usuario actual
+
 import { NextApiRequest } from "next";
 import { getAuth } from "@clerk/nextjs/server";
 

@@ -1,3 +1,5 @@
+// Endpoint para manejar los canales individuales, editar o eliminar
+
 import { NextResponse } from "next/server";
 import { MemberRole } from "@prisma/client";
 
@@ -26,6 +28,8 @@ export async function DELETE(
       return new NextResponse("Channel ID missing", { status: 400 });
     }
 
+
+    // funcion para eliminar canales, no se puede eliminar el canal general
     const server = await db.server.update({
       where: {
         id: serverId,
@@ -84,6 +88,7 @@ export async function PATCH(
       return new NextResponse("Name cannot be 'general'", { status: 400 });
     }
 
+    // funcion para eliminar canales, no se puede editar el canal general
     const server = await db.server.update({
       where: {
         id: serverId,

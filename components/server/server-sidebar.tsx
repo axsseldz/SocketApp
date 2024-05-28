@@ -1,3 +1,5 @@
+// Paginal del sidebar componente
+
 import { ChannelType } from "@prisma/client";
 import { redirect } from "next/navigation";
 

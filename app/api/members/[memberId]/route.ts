@@ -1,8 +1,11 @@
+// Endpoints para manejar los usuarios
+
 import { NextResponse } from "next/server";
 
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 
+// Eliminar usuario
 export async function DELETE(
   req: Request,
   { params }: { params: { memberId: string } }
@@ -14,7 +17,7 @@ export async function DELETE(
     const serverId = searchParams.get("serverId");
 
     if (!profile) {
-      return new NextResponse("Unauthorized" ,{ status: 401 });
+      return new NextResponse("Unauthorized", { status: 401 });
     }
 
     if (!serverId) {
@@ -59,6 +62,7 @@ export async function DELETE(
   }
 }
 
+// Actualizar usuario
 export async function PATCH(
   req: Request,
   { params }: { params: { memberId: string } }

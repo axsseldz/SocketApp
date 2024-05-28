@@ -1,33 +1,28 @@
-import { v4 as uuidv4 } from "uuid";
+// Endpoint para el manejo del chat, por ahora solo es uno solo
+
 import { NextResponse } from "next/server";
-import { MemberRole } from "@prisma/client";
 
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 
 export async function POST(req: Request) {
   try {
-    const { name, imageUrl } = await req.json();
     const profile = await currentProfile();
 
     if (!profile) {
       return new NextResponse("Unauthorized", { status: 401 });
     }
 
-    const server = await db.server.create({
+    const server = await db.server.update({
+      where: {
+        inviteCode: "b94a113c-a3a5-4241-9628-f9a43a052903",
+      },
       data: {
-        profileId: profile.id,
-        name,
-        imageUrl,
-        inviteCode: uuidv4(),
-        channels: {
-          create: [
-            { name: "general", profileId: profile.id }
-          ]
-        },
         members: {
           create: [
-            { profileId: profile.id, role: MemberRole.ADMIN }
+            {
+              profileId: profile.id,
+            }
           ]
         }
       }

@@ -1,3 +1,4 @@
+// Manejo de la aplicacion al registrarse o ingresar
 import { redirect } from "next/navigation";
 
 import { db } from "@/lib/db";

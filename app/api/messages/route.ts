@@ -1,3 +1,5 @@
+// Endpoint para el envio de mensajes individuales
+
 import { NextResponse } from "next/server";
 import { Message } from "@prisma/client";
 
@@ -19,13 +21,14 @@ export async function GET(
     if (!profile) {
       return new NextResponse("Unauthorized", { status: 401 });
     }
-  
+
     if (!channelId) {
       return new NextResponse("Channel ID missing", { status: 400 });
     }
 
     let messages: Message[] = [];
 
+    // solicitar mensajes desde un mensja especifico
     if (cursor) {
       messages = await db.message.findMany({
         take: MESSAGES_BATCH,
@@ -47,7 +50,7 @@ export async function GET(
           createdAt: "desc",
         }
       })
-    } else {
+    } else { // solicitar mensajes desde el inicio especifico
       messages = await db.message.findMany({
         take: MESSAGES_BATCH,
         where: {

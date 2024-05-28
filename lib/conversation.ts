@@ -10,6 +10,7 @@ export const getOrCreateConversation = async (memberOneId: string, memberTwoId: 
   return conversation;
 }
 
+// Funcion para encontrar conversacion con otro usuario
 const findConversation = async (memberOneId: string, memberTwoId: string) => {
   try {
     return await db.conversation.findFirst({
@@ -37,6 +38,7 @@ const findConversation = async (memberOneId: string, memberTwoId: string) => {
   }
 }
 
+// Funcion para crear conversacion con otro usuario
 const createNewConversation = async (memberOneId: string, memberTwoId: string) => {
   try {
     return await db.conversation.create({

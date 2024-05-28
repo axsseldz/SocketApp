@@ -1,3 +1,5 @@
+// Endpoint para crear canales dentro del chat
+
 import { NextResponse } from "next/server";
 import { MemberRole } from "@prisma/client";
 
@@ -26,6 +28,7 @@ export async function POST(
       return new NextResponse("Name cannot be 'general'", { status: 400 });
     }
 
+    // Solo puede crear canales el dueño del chat
     const server = await db.server.update({
       where: {
         id: serverId,

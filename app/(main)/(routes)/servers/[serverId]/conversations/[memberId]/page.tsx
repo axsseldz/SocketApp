@@ -1,3 +1,5 @@
+// Paginal del canal indivudal
+
 import { redirectToSignIn } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
@@ -23,12 +25,14 @@ const MemberIdPage = async ({
   params,
   searchParams,
 }: MemberIdPageProps) => {
+  // Obtenemos informacion del usuario actual
   const profile = await currentProfile();
 
   if (!profile) {
     return redirectToSignIn();
   }
 
+  // obtener informacion completa del usuario actual
   const currentMember = await db.member.findFirst({
     where: {
       serverId: params.serverId,
@@ -43,6 +47,7 @@ const MemberIdPage = async ({
     return redirect("/");
   }
 
+  // encontrar o crear conversacion con otro usuario
   const conversation = await getOrCreateConversation(currentMember.id, params.memberId);
 
   if (!conversation) {

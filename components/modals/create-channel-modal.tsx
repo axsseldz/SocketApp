@@ -37,11 +37,11 @@ import { useEffect } from "react";
 
 const formSchema = z.object({
   name: z.string().min(1, {
-    message: "Channel name is required."
+    message: "Nombre del canal es requerido."
   }).refine(
     name => name !== "general",
     {
-      message: "Channel name cannot be 'general'"
+      message: "Nombre del canal no puede ser 'general'"
     }
   ),
   type: z.nativeEnum(ChannelType)
@@ -54,7 +54,7 @@ export const CreateChannelModal = () => {
 
   const isModalOpen = isOpen && type === "createChannel";
   const { channelType } = data;
- 
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -101,7 +101,7 @@ export const CreateChannelModal = () => {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Create Channel
+            Crea un canal
           </DialogTitle>
         </DialogHeader>
         <Form {...form}>
@@ -115,13 +115,13 @@ export const CreateChannelModal = () => {
                     <FormLabel
                       className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70"
                     >
-                      Channel name
+                      Nombre del canal
                     </FormLabel>
                     <FormControl>
                       <Input
                         disabled={isLoading}
                         className="bg-zinc-300/50 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
-                        placeholder="Enter channel name"
+                        placeholder="Ingresa un nombre"
                         {...field}
                       />
                     </FormControl>
@@ -134,7 +134,7 @@ export const CreateChannelModal = () => {
                 name="type"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Channel Type</FormLabel>
+                    <FormLabel>Tipo de canal</FormLabel>
                     <Select
                       disabled={isLoading}
                       onValueChange={field.onChange}
@@ -166,7 +166,7 @@ export const CreateChannelModal = () => {
             </div>
             <DialogFooter className="bg-gray-100 px-6 py-4">
               <Button variant="primary" disabled={isLoading}>
-                Create
+                Crear
               </Button>
             </DialogFooter>
           </form>

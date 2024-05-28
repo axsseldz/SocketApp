@@ -1,3 +1,5 @@
+// Pagina del sidebar
+
 import { redirectToSignIn } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
@@ -18,6 +20,7 @@ const ServerIdLayout = async ({
     return redirectToSignIn();
   }
 
+  // Conseguir informacion del chat
   const server = await db.server.findUnique({
     where: {
       id: params.serverId,
@@ -29,6 +32,7 @@ const ServerIdLayout = async ({
     }
   });
 
+  // Si no hay informacion del chat, redirigir a la ruta /
   if (!server) {
     return redirect("/");
   }

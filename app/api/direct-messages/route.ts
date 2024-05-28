@@ -1,9 +1,12 @@
+// Endpoint para el envio de mensajes
+
 import { NextResponse } from "next/server";
 import { DirectMessage } from "@prisma/client";
 
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
 
+// numero de mensajes solicitador por request
 const MESSAGES_BATCH = 10;
 
 export async function GET(
@@ -19,13 +22,14 @@ export async function GET(
     if (!profile) {
       return new NextResponse("Unauthorized", { status: 401 });
     }
-  
+
     if (!conversationId) {
       return new NextResponse("Conversation ID missing", { status: 400 });
     }
 
     let messages: DirectMessage[] = [];
 
+    // solicitar mensajes desde un mensja especifico
     if (cursor) {
       messages = await db.directMessage.findMany({
         take: MESSAGES_BATCH,
@@ -46,7 +50,7 @@ export async function GET(
         orderBy: {
           createdAt: "desc",
         }
-      })
+      }) // solicitar mensajes desde el inicio especifico
     } else {
       messages = await db.directMessage.findMany({
         take: MESSAGES_BATCH,
