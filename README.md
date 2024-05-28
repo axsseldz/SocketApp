@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Esta aplicación de chat permite a los usuarios participar en conversaciones a través de una sala de chat general donde todos los usuarios registrados pueden participar. El proceso de registro admite OAuth utilizando Gmail o GitHub a través de Clerk. Actualmente, el acceso al chat está restringido a enlaces de invitación. Además del chat basado en texto, la aplicación admite videollamadas tanto en grupo como uno a uno, utilizando LiveKit para la funcionalidad de videollamadas. Los usuarios también pueden subir archivos y fotos utilizando UploadThing.
+Esta aplicación de chat permite a los usuarios participar en conversaciones a través de una sala de chat general donde todos los usuarios registrados pueden participar. El proceso de registro admite OAuth utilizando Gmail o GitHub a través de Clerk. Además del chat basado en texto, la aplicación admite videollamadas tanto en grupo como uno a uno, utilizando LiveKit para la funcionalidad de videollamadas. Los usuarios también pueden subir archivos y fotos utilizando UploadThing.
 
 ### Características Principales
 
