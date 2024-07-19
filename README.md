@@ -27,22 +27,22 @@ Esta aplicación de chat permite a los usuarios participar en conversaciones a t
 # App Preview:
 
 **Sign up y Sign in:**
-![Alt Text](https://media.discordapp.net/attachments/1160427026839257133/1243992721018847303/Screenshot_2024-05-25_at_11.14.01_AM.png?ex=66537e00&is=66522c80&hm=c9bfd55d3393c09daff0939adb58dbadcb560aadf3e506571ca4b4e121356d89&=&format=webp&quality=lossless&width=1978&height=1064)
+![Alt Text](https://cdn.discordapp.com/attachments/1160427026839257133/1243992721018847303/Screenshot_2024-05-25_at_11.14.01_AM.png?ex=669b57c0&is=669a0640&hm=93d8367504eab0efa8eb6a535f2f71a5b886eca1b6cf76477f54e78489302c00&)
 
 **Chat General (Dark Mode):**
-![Alt Text](https://media.discordapp.net/attachments/1160427026839257133/1243992720389832815/Screenshot_2024-05-25_at_11.12.51_AM.png?ex=66537e00&is=66522c80&hm=abac1bac0eb8d256c75702c13772f2f2ed18263de84beee6cb563e750a81f014&=&format=webp&quality=lossless&width=1964&height=1064)
+![Alt Text](https://cdn.discordapp.com/attachments/1160427026839257133/1243992720389832815/Screenshot_2024-05-25_at_11.12.51_AM.png?ex=669b57c0&is=669a0640&hm=e5d2c84a568bd009e0d0069b6283cd3190647c89a4fbb735f738be75f12c087e&)
 
 **Chat General (Light Mode):**
-![Alt Text](https://media.discordapp.net/attachments/1160427026839257133/1243992722176741407/Screenshot_2024-05-25_at_11.14.54_AM.png?ex=66537e01&is=66522c81&hm=1f1989ba3849a8a4ceed4e73e92690d9e8d70ec4ab7370b17bc6de85a2925aa5&=&format=webp&quality=lossless&width=1972&height=1064)
+![Alt Text](https://cdn.discordapp.com/attachments/1160427026839257133/1243992722176741407/Screenshot_2024-05-25_at_11.14.54_AM.png?ex=669b57c1&is=669a0641&hm=15e31c5f9a38c36e5d82f61b3170b0fdcecb082b62a757ff05ac12ff6c2a7ca3&)
 
 **Chat Uno a Uno:**
-![Alt Text](https://media.discordapp.net/attachments/1160427026839257133/1243992721589403648/Screenshot_2024-05-25_at_11.14.41_AM.png?ex=66537e01&is=66522c81&hm=a740c3467838321dbf7ee982873e1a2064ebbbab07d6328ff59c183cfbc52b15&=&format=webp&quality=lossless&width=1974&height=1064)
+![Alt Text](https://cdn.discordapp.com/attachments/1160427026839257133/1243992721589403648/Screenshot_2024-05-25_at_11.14.41_AM.png?ex=669b57c1&is=669a0641&hm=cf93ffa9a16686356ee96359a2ca14a560934a1649c85e20865f41d4ec2a68be&)
 
 **Video General:**
-![Alt Text](https://media.discordapp.net/attachments/1160427026839257133/1243993884619440269/Screenshot_2024-05-25_at_11.27.01_AM.png?ex=66537f16&is=66522d96&hm=90460683ff483db0d3df71b34c70fd37c5c076d8641b52e38f097370662e5b5d&=&format=webp&quality=lossless&width=1974&height=1064)
+![Alt Text](https://cdn.discordapp.com/attachments/1160427026839257133/1243993884619440269/Screenshot_2024-05-25_at_11.27.01_AM.png?ex=669b58d6&is=669a0756&hm=51729f62dfc240211946b36306b4ee3f615409bc761c0203777e837854eea168&)
 
 **Video Uno a Uno:**
-![Alt Text](https://media.discordapp.net/attachments/1160427026839257133/1243994416167911435/Screenshot_2024-05-25_at_11.29.29_AM.png?ex=66537f95&is=66522e15&hm=a9fded6f05d66df4e60137b7999e326577148d0ad026f3766830ebf91068eda8&=&format=webp&quality=lossless&width=1100&height=594)
+![Alt Text](https://cdn.discordapp.com/attachments/1160427026839257133/1243994416167911435/Screenshot_2024-05-25_at_11.29.29_AM.png?ex=669b5955&is=669a07d5&hm=7faaf0284cbea9ec88240e90030ac34c79477045fb73867e19140684ad98db46&)
 
 
 
